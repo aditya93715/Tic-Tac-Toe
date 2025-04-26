@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Candy Tic-Tac-Toe AI</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="video/video1.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <div class="overlay"></div>
+
+  <div class="container">
+    <header>
+      <img src="images/logo.png" alt="Logo" class="logo" />
+      <h1>Tic Tac Toe</h1>
+    </header>   
+
+    <div class="game-board">
+      <button class="cell" data-index="0"></button>
+      <button class="cell" data-index="1"></button>
+      <button class="cell" data-index="2"></button>
+      <button class="cell" data-index="3"></button>
+      <button class="cell" data-index="4"></button>
+      <button class="cell" data-index="5"></button>
+      <button class="cell" data-index="6"></button>
+      <button class="cell" data-index="7"></button>
+      <button class="cell" data-index="8"></button>
+    </div>
+
+    <div class="message"></div>
+
+    <!-- Modal Popup for Celebration and Restart Confirmation -->
+    <div id="restart-modal" class="modal hidden">
+      <div class="modal-content">
+        <p id="modal-message">Game over! Do you want to play again?</p>
+        <div class="modal-buttons">
+          <button id="confirm-restart" class="modal-btn">Restart</button>
+          <button id="cancel-restart" class="modal-btn">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background music -->
+  <audio id="bg-music" src="audio/bc.mp3" loop autoplay></audio>
+
+  <!-- Confetti library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
